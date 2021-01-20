@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>Scott's Guitar Shop</title>
+</head>
+<body>
+    <h1 id="logo">Scott's Guitar Shop</h1>
+    <h2 id ="subheading">Orders</h2>
+
+    <div class="order_container">
+        {% for order in orders %}
+        <div class="order">
+            <h2>Customer Name: {{order.customer_name}}</h2>
+            <h2>Order Date: {{order.order_date}}</h2>
+            <h4>Quantity: {{order.quantity}}</h4>
+            <h2>Guitar: {{order.guitar_brand}} {{order.guitar_description}}</h2>
+            <a href="/orders/{{orders.index(order)}}">View Order</a>
+        </div>
+        {% endfor %}
+    </div>
+    
+    
+</body>
+</html>

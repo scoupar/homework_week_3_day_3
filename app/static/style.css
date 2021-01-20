@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color:rgb(4, 0, 8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color:black;
+}
+
+.order_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+.order{
+    display:flex;
+    flex-direction:column;
+    width:20vw;
+    background-color: white;
+    padding:10px;
+    margin:20px;
+    text-align: center; 
+}
+
+#logo{
+    color:darkgoldenrod;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-size:100px;
+}
+
+#subheading{
+    color:darkgoldenrod;
+    text-align:center;
+    font-size:50px;
+    
+}
+
+#customer_order{
+    color:darkgoldenrod;
+}
+
+a{
+    color:darkgoldenrod;
+}

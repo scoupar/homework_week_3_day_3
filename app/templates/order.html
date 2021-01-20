@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>ORDER PAGE</title>
+</head>
+<body>
+    <h1 id="logo">Scott's Guitar Shop</h1>
+    <h1 id="customer_order">{{order.customer_name}}'s Order</h1>
+
+    <div class="order">
+        
+        <h2>Order Date: {{order.order_date}}</h2>
+        <h4>Quantity: {{order.quantity}}</h4>
+        <h3>Guitar: {{order.guitar_brand}} {{order.guitar_description}}</h3>
+    </div>
+</body>
+</html>
